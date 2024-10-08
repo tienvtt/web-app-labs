@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint - Untitled</title>
+    <link rel="stylesheet" href="lab1.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="icons">
+            <img src="./lab1_icons/logo2.jpg" alt="Logo">
+            <div style="background-color: #4d4d4d; width: 1px; height: 15px; margin: 2px; margin-right:5px;"></div>
+            <img src="./lab1_icons/save.png" alt="Save">
+            <img src="./lab1_icons/undo.png" alt="Undo">
+            <img src="./lab1_icons/redo.png" alt="Redo">
+            <img src="./lab1_icons/document.png" alt="Document">
+            <img src=".\lab1_icons\down.png" style="width: 8px; height: 8px;">
+            <div style="background-color: #4d4d4d; width: 1px; height: 15px; margin: 2px; margin-right:5px;"></div>
+            <p>Untitled - Paint </p>
+        </div>
+
+        <div class="menu-buttons">
+            <button class="file-button">File</button>
+            <button class="home-button">Home</button>
+            <button class="view-button">View</button>
+        </div>
+    </div>
+
+    <div class="ribbon">
+        <div class="clipboard">
+            <div class="clipboard-icon">
+                <div class="paste">
+                    <img src="./lab1_icons/paste.png" alt="Paste" class="paste-icon">
+                    <p style="margin:5px;">Paste</p>
+                    <img src=".\lab1_icons\more.png" alt="" style="width: 10px; height: 5px;">
+                </div>
+                <div class="cut-copy">
+                    <div class="cut">
+                        <img src="./lab1_icons/cut.png" alt="Cut" class="cut-icon">
+                        <p>Cut</p>
+                    </div>
+                    <div class="copy">
+                        <img src="./lab1_icons/copy.png" alt="Copy" class="copy-icon">
+                        <p>Copy</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="clipboard-title" >Clipboard</p>
+            </div>
+        </div>
+        <hr>
+        <div class="image-editor">
+            <div class="image-editor-icon">
+                <div class="select">
+                    <div class="select-icon"></div>
+                    <p style="margin:5px;">Select</p>
+                    <img src=".\lab1_icons\more.png" alt="" style="width: 10px; height: 5px;">
+                </div>
+                <div class="crop-resize-rotate">
+                    <div class="crop">
+                        <img src=".\lab1_icons\crop.png" alt="Crop" class="crop-icon">
+                        <p style="margin:5px;">Crop</p>
+                    </div>
+                    <div class="resize">
+                        <img src=".\lab1_icons\resize.png" alt="Resize" class="resize-icon">
+                        <p style="margin:5px;">Resize</p>
+                    </div>
+                    <div class="rotate">
+                        <img src=".\lab1_icons\rotate.png" alt="Rotate" class="Rotate-icon">
+                        <p style="margin:5px;">Rotate</p>
+                        <img src=".\lab1_icons\more.png" alt="" style="width: 10px; height: 5px;">
+
+                    </div>
+                </div>
+            </div>
+            <p>Image</p>
+        </div>
+        <hr>
+        <div class="tools">
+            <div class="tool-row">
+                <img src=".\lab1_icons\pencil.jpg" alt="pencil" class="pencil-icon">
+                <img src=".\lab1_icons\paint_bucket.png" alt="Paint_Bk" class="paint-bk">
+                <img src=".\lab1_icons\letter.png" alt="Letter" class="eraser">
+
+            </div>
+            <div class="tool-row">
+                <img src=".\lab1_icons\eraser.jpg" alt="Eraser">
+                <img src=".\lab1_icons\color_picker.png" alt="Color Picker">
+                <img src=".\lab1_icons\magnifier.png" alt="Magnifier">
+            </div>
+            <p>Tools</p>
+        </div>
+        <hr>
+        <div class="brushes">
+            <img src=".\lab1_icons\brushes.png" alt="brushes">
+            <p style="margin:5px;">Brushes</p>
+            <img src=".\lab1_icons\more.png" alt="" style="width: 10px; height: 5px;">
+
+        </div>
+        <hr>
+        <div class="shapes">
+            <div class="shape-selection">
+                <div style="border: 1px solid #d3d3d3;">
+                    <div class="shape-list">
+                        <img src=".\lab1_icons\line.png" alt="">
+                        <img src=".\lab1_icons\curve.png" alt="">
+                        <img src=".\lab1_icons\oval.png" alt="">
+                        <img src=".\lab1_icons\rectangle.png" alt="">
+                        <img src=".\lab1_icons\rounded_rectangle.png" alt="">
+                        <img src=".\lab1_icons\L-shape.png" alt="">
+                    </div>
+                    <div class="shape-list">
+                        <img src=".\lab1_icons\triangle.png" alt="">
+                        <img src=".\lab1_icons\right_triangle.png" alt="">
+                        <img src=".\lab1_icons\diamond.png" alt="">
+                        <img src=".\lab1_icons\pentagon.png" alt="">
+                        <img src=".\lab1_icons\hexagon .png" alt="">
+                        <img src=".\lab1_icons\right_arrow.png" alt="">
+                    </div>
+                    <div class="shape-list">
+                        <img src=".\lab1_icons\left_arrow.png" alt="">
+                        <img src=".\lab1_icons\up_arrow.png" alt="">
+                        <img src=".\lab1_icons\down_arrow.png" alt="">
+                        <img src=".\lab1_icons\four_star.png" alt="">
+                        <img src=".\lab1_icons\five_star.png" alt="">
+                        <img src=".\lab1_icons\six_star.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="outline-fill">
+                        <div class="outline">
+                            <img src=".\lab1_icons\outline.jpg" alt="">
+                            <p style="margin:2px;">Outline</p>
+                            <img src=".\lab1_icons\more.png" alt="" style="width: 10px; height: 5px;">
+
+                        </div>
+                        <div class="fill">
+                            <img src=".\lab1_icons\fill.png" alt="">
+                            <p style="margin:2px;">Fill</p>
+                            <img src=".\lab1_icons\more.png" alt="" style="width: 10px; height: 5px;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Shapes</p>
+
+
+        </div>
+        <hr>
+        <div class="size">
+            <div class="size-1" style="background-color: rgb(19, 69, 109); width: 35px; height: 1px; margin: 2px">
+            </div>
+            <div class="size-3" style="background-color: rgb(19, 69, 109); width: 35px; height: 3px; margin: 2px">
+            </div>
+            <div class="size-5" style="background-color: rgb(19, 69, 109); width: 35px; height: 5px; margin: 2px">
+            </div>
+            <div class="size-8" style="background-color: rgb(19, 69, 109); width: 35px; height: 8px; margin: 2px">
+            </div>
+            <p style="margin:5px;">Size</p>
+            <img src=".\lab1_icons\more.png" alt="" style="width: 10px; height: 5px;">
+
+        </div>
+        <hr>
+        <div class="color">
+            <div class="color-icons">
+                <div class="color-1" style ="text-align: center;">
+                    <div class="color-selection" style="background-color: black" ></div>
+                    <p>Color<br>1</p>
+                    
+                </div>
+                <div class="color-2" style ="text-align: center;">
+                    <div class="color-selection" style="background-color: white;"></div>
+                    <p>Color<br>2</p>
+                    
+                </div>
+                
+                <div>
+                    <div class="color-palette">
+
+                        <div class="color-box" style="background-color: black;"></div>
+                        <div class="color-box" style="background-color: gray;"></div>
+                        <div class="color-box" style="background-color: darkred;"></div>
+                        <div class="color-box" style="background-color: red;"></div>
+                        <div class="color-box" style="background-color: orange;"></div>
+                        <div class="color-box" style="background-color: yellow;"></div>
+                        <div class="color-box" style="background-color: green;"></div>
+                        <div class="color-box" style="background-color: turquoise;"></div>
+                        <div class="color-box" style="background-color: indigo;"></div>
+                        <div class="color-box" style="background-color: purple;"></div>
+                    </div>
+                    <div class="color-palette">
+                        <div class="color-box" style="background-color: white"></div>
+                        <div class="color-box" style="background-color: lightgray;"></div>
+                        <div class="color-box" style="background-color: brown;"></div>
+                        <div class="color-box" style="background-color: rosybrown;"></div>
+                        <div class="color-box" style="background-color: gold;"></div>
+                        <div class="color-box" style="background-color: lightyellow;"></div>
+                        <div class="color-box" style="background-color: lime;"></div>
+                        <div class="color-box" style="background-color: #99D9EA;"></div>
+                        <div class="color-box" style="background-color: #7092BE"></div>
+                        <div class="color-box" style="background-color: lavender"></div>
+                    </div>
+                    <div class="color-palette">
+
+                        <div class="color-box" style="background-color: white"></div>
+                        <div class="color-box" style="background-color: white"></div>
+                        <div class="color-box" style="background-color: white"></div>
+                        <div class="color-box" style="background-color: white"></div>
+                        <div class="color-box" style="background-color: white"></div>
+                        <div class="color-box" style="background-color: white"></div>
+                        <div class="color-box" style="background-color: white"></div>
+                        <div class="color-box" style="background-color: white"></div>
+                        <div class="color-box" style="background-color: white"></div>
+                        <div class="color-box" style="background-color: white"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Colors</p>
+        </div>
+        
+        <div class="edit-color">
+            <img src=".\lab1_icons\edit_color.png" alt="">
+            <p>Edit colors</p>
+        </div>
+        <hr>
+        <div class="edit-color" >
+            <img src=".\lab1_icons\edit_color3D.png" alt="">
+            <p>Edit with <br>Paint 3D</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

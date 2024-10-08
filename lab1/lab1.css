@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.icons img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.icons p {
+    margin: 0 5px;
+    margin-left: 0px;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+
+.menu-buttons {
+    display: flex;
+}
+
+.menu-buttons {
+
+    font-size: 12px;
+    background-color: white;
+}
+
+.menu-buttons button {
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 8px;
+    cursor: pointer
+}
+
+
+.menu-buttons button:hover {
+    background-color: rgb(51, 116, 192);
+    color: white;
+    border: 1px solid white;
+}
+
+.ribbon {
+    padding: 5px;
+    display: flex;
+    /* justify-content: space-around; */
+    color: gray;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.clipboard {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-items: center;
+}
+
+.clipboard-icon {
+    display: flex;
+}
+
+.paste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(81, 81, 81);
+}
+
+.paste-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.cut-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cut-copy .cut,
+.cut-copy .copy {
+    display: flex;
+    align-items: center;
+
+}
+
+.cut-copy img {
+    width: 15px;
+    height: 15px;
+}
+
+.clipboard-title {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.image-editor {
+    display: flex;
+    color: grey;
+    flex-direction: column;
+    align-items: start;
+    align-items: center;
+}
+
+.image-editor-icon {
+    display: flex;
+}
+
+.select {
+    display: flex;
+    /* background-color: rgb(163, 209, 240); */
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.select-icon {
+    width: 35px;
+    height: 25px;
+    border: 2px dashed rgb(96, 139, 198);
+    background-color: #fff;
+}
+
+
+.crop-resize-rotate {
+
+    flex-direction: column;
+
+}
+
+.crop-resize-rotate img {
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.crop,
+.resize,
+.rotate {
+    display: flex;
+    align-items: center;
+
+}
+
+.tools {
+    display: flex;
+    color: grey;
+    flex-direction: column;
+    align-items: start;
+    align-items: center;
+}
+
+.tool-row {
+    display: flex;
+}
+
+.tools img {
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.brushes {
+    display: flex;
+    color: grey;
+    flex-direction: column;
+    align-items: start;
+    align-items: center;
+}
+
+.brushes img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(152, 206, 237);
+}
+
+.brushes img:hover {
+    border: 1px solid #000;
+}
+
+.shapes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+}
+
+.shape-selection {
+    display: flex;
+}
+
+.outline,
+.fill {
+    display: flex;
+    align-items: center;
+}
+
+.shapes img {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+}
+
+.shape-icons {
+    display: flex;
+
+}
+
+.outline-fill img {
+    width: 18px;
+    height: 18px;
+    margin-left: 2px;
+}
+
+.shape-list {
+    display: flex;
+    margin: 2px;
+}
+
+.size {
+    display: flex;
+    color: grey;
+    flex-direction: column;
+    align-items: start;
+    align-items: center;
+}
+
+.color-palette {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.color {
+    display: flex;
+    color: grey;
+    flex-direction: column;
+    align-items: start;
+    align-items: center;
+}
+
+.color-icons {
+    display: flex;
+}
+
+.color-selection {
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    padding: 1px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+}
+
+.color-box {
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+    padding: 1px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+}
+
+.edit-color {
+    justify-content: center;
+    text-align: center;
+}
+
+.edit-color img {
+    width: 40px;
+    height: 40px;
+}
