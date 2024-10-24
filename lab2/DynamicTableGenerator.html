@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table Generator</title>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Dynamic Table Generator</h1>
+        <input type="number" id="rows" placeholder="Rows" min="1">
+        <input type="number" id="columns" placeholder="Columns" min="1">
+        <button id="generateTable">Generate Table</button>
+    </div>
+    <div id="tableContainer"></div>
+
+    <script>
+        document.getElementById('generateTable').addEventListener('click', () => {
+            const rows = parseInt(document.getElementById('rows').value);
+            const columns = parseInt(document.getElementById('columns').value);
+            const tableContainer = document.getElementById('tableContainer');
+            tableContainer.innerHTML = ''; 
+
+            if (rows <= 0 || columns <= 0) {
+                alert('Please enter valid positive numbers for rows and columns.');
+                return;
+            }
+
+            const table = createTable(rows, columns);
+            tableContainer.appendChild(table);
+        });
+
+        function createTable(rows, columns) {
+            const table = document.createElement('table');
+            for (let i = 1; i <= rows; i++) {
+                const newRow = document.createElement('tr');
+                for (let j = 1; j <= columns; j++) {
+                    const newCell = document.createElement('td');
+                    newCell.textContent = `(${i}, ${j})`;
+                    newRow.appendChild(newCell);
+                }
+                table.appendChild(newRow);
+            }
+            return table;
+        }
+    </script>
+</body>
+</html>

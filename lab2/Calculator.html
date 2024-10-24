@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Application</title>
+    <style>
+        .calculator {
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        input {
+            width: 50px;
+        }
+        button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <input type="number" id="number1" placeholder="0">
+        <input type="number" id="number2" placeholder="0">
+        <br>
+        <button data-operation="add">+</button>
+        <button data-operation="subtract">-</button>
+        <button data-operation="multiply">*</button>
+        <button data-operation="divide">/</button>
+        <h3>Result: <span id="result">0</span></h3>
+    </div>
+</body>
+<script>
+    const calculate = (operation) => {
+        const number1 = parseFloat(document.getElementById('number1').value);
+        const number2 = parseFloat(document.getElementById('number2').value);
+        let result;
+
+        switch (operation) {
+            case 'add':
+                result = number1 + number2;
+                break;
+            case 'subtract':
+                result = number1 - number2;
+                break;
+            case 'multiply':
+                result = number1 * number2;
+                break;
+            case 'divide':
+                result = number2 !== 0 ? number1 / number2 : 'Error';
+                break;
+            default:
+                result = 'Invalid operation';
+        }
+
+        document.getElementById('result').innerText = result;
+    }
+
+    document.querySelectorAll('button[data-operation]').forEach(button => {
+        button.addEventListener('click', () => calculate(button.getAttribute('data-operation')));
+    });
+</script>
+</html>

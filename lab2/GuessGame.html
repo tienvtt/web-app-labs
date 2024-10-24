@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess the number (1-100)</h1>
+    <input type="number" id="guess" placeholder="Enter your guess">
+    <button id="submitGuess">Guess</button>
+    <p id="feedback"></p>
+
+    <script>
+        class NumberGuessingGame {
+            constructor() {
+                this.targetNumber = this.generateRandomNumber();
+                this.init();
+            }
+
+            generateRandomNumber() {
+                return Math.floor(Math.random() * 100) + 1;
+            }
+
+            init() {
+                document.getElementById('submitGuess').addEventListener('click', () => this.checkGuess());
+            }
+
+            checkGuess() {
+                const userGuess = parseInt(document.getElementById('guess').value);
+                const feedbackElement = document.getElementById('feedback');
+
+                if (userGuess > this.targetNumber) {
+                    feedbackElement.textContent = 'Too high!';
+                } else if (userGuess < this.targetNumber) {
+                    feedbackElement.textContent = 'Too low!';
+                } else {
+                    feedbackElement.textContent = 'Correct! You guessed it!';
+                    this.resetGame();
+                }
+            }
+
+            resetGame() {
+                this.targetNumber = this.generateRandomNumber();
+                document.getElementById('guess').value = 0;
+                console.log(this.targetNumber);
+            }
+        }
+
+        new NumberGuessingGame(); 
+    </script>
+</body>
+</html>
